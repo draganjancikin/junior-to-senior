@@ -1,2 +1,1 @@
-# junior-to-senior
-ZTM course: The Complete Junior to Senior Web Developer Roadmap 2020
+# ZTM course: The Complete Junior to Senior Web Developer Roadmap 2021
