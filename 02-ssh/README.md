@@ -62,3 +62,9 @@ Resources: Asymmetric Encryption
 #### Hashing
 
 #### SSH into a server
+
+Recommended ssh-keygen command:
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
