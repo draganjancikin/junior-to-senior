@@ -15,3 +15,7 @@
 * AWS
 * CI/CD
 * Extra Bits
+
+## Section 2: SSH - Secure Shell
+
+Set up SSH on github account
