@@ -17,15 +17,15 @@ CLIENT <- Secure Shell Protocol -> HOST
 
 ## SSH Command
 
-‘‘‘bash
+```bash
 ssh {user}@{host}
-’’’
+```
 
 Example
 
-’’’bash
+```bash
 ssh root@167.99.146.57
-’’’
+```
 
 Example of use SSH:
 
