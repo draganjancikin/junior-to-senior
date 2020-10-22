@@ -18,13 +18,15 @@ CLIENT <- Secure Shell Protocol -> HOST
 ## SSH Command
 
 ```bash
-ssh {user}@{host}
+$ ssh {user}@{host}
+# Connect to server {host} with user {user}
 ```
 
 Example
 
 ```bash
-ssh root@167.99.146.57
+$ ssh root@167.99.146.57
+# Connect example
 ```
 
 Example of use SSH:
@@ -66,5 +68,40 @@ Resources: Asymmetric Encryption
 Recommended ssh-keygen command:
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+# Generate ssh key
 ```
+
+#### Excercise: Set Up SSH on Github
+
+Workflow
+
+* Check if existing SSH key
+
+```bash
+$ ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist
+```
+
+* Generate ssh key on client computer and adding to ssh-agent
+
+```bash
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+# Generate ssh key
+$ ssh-add ~/.ssh/id_rsa
+# Add key to ssh-agent
+```
+
+* Copy new SSH key to clipboard and adding to Github account
+
+```bash
+$ sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+$ xclip -selection clipboard < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+
+```
+
+On Github account, Settings/SSH and GPG keys, click "New SSH Keys", add Title, paste key, and click "Add SSH Key".
+
+Extra Solution: <https://github.com/antonykidis/Setup-ssh-for-github/blob/master/Setup-ssh-on-github.pdf>
