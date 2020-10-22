@@ -17,16 +17,12 @@ CLIENT <- Secure Shell Protocol -> HOST
 
 ## SSH Command
 
-```bash
-$ ssh {user}@{host}
-# Connect to server {host} with user {user}
-```
-
 Example
 
 ```bash
+# $ ssh {user}@{host}
 $ ssh root@167.99.146.57
-# Connect example
+# Connect to server {host} with user {user}
 ```
 
 Example of use SSH:
